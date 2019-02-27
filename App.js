@@ -6,7 +6,7 @@ class MyWeb extends Component {
 
   constructor(properties) {
     super(properties);
-    OneSignal.init("a27c12bb-b8d4-4877-869d-23e212528741");
+    OneSignal.init("7ab1644a-f50e-4844-87f2-abf69651cddc");
     OneSignal.inFocusDisplaying(2);
 
     OneSignal.addEventListener('received', this.onReceived);
@@ -38,6 +38,7 @@ class MyWeb extends Component {
   render() {
     return (
       <WebView
+        style={{ marginTop: 0 }}
         originWhitelist={['*']}
         source={{uri: 'http://www.channel9mobiles.com/estore'}}
       />
